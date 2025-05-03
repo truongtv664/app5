@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lịch trình chi tiết Lễ Hội Văn Hóa Nghệ Thuật Trung Quốc & Tây Nguyên - Sự kiện văn hóa đặc sắc tại Đắk Lắk">
+    <meta name="keywords" content="lịch trình, lễ hội văn hóa, nghệ thuật, Trung Quốc, Tây Nguyên, Đắk Lắk">
+    <meta property="og:title" content="Lịch Trình Chi Tiết | Lễ Hội Văn Hóa Nghệ Thuật Trung Quốc & Tây Nguyên 2025">
+    <meta property="og:description" content="Lịch trình chi tiết 3 ngày lễ hội với các hoạt động văn hóa nghệ thuật đặc sắc">
+    <meta property="og:image" content="images/festival-banner.jpg">
+    <meta property="og:type" content="website">
+    <title>Lịch Trình Chi Tiết | Lễ Hội Văn Hóa Nghệ Thuật Trung Quốc & Tây Nguyên</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <style>
+        :root {
+            --primary: #e60012;
+            --primary-dark: #cc0010;
+            --primary-light: #ff1a1a;
+            --secondary: #006838;
+            --secondary-dark: #004d29;
+            --secondary-light: #00994d;
+            --accent: #ffd700;
+            --accent-dark: #ccac00;
+            --accent-light: #ffe44d;
+            --text-dark: #1a1a1a;
+            --text-medium: #4a4a4a;
+            --text-light: #ffffff;
+            --background: #f8f9fa;
+            --background-alt: #f0f2f5;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --border-radius: 16px;
+            --container-width: 1280px;
+            --section-spacing: 6rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            color: var(--text-dark);
+            background: var(--background);
+            font-size: 16px;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            line-height: 1.3;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-medium);
+        }
+
+        .nav-menu {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 700;
+            font-size: 1.25rem;
+            transition: var(--transition);
+        }
+
+        .logo:hover {
+            color: var(--primary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            position: relative;
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+            border-radius: 2px;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .schedule-section {
+            padding: var(--section-spacing) 0;
+            background: var(--background);
+        }
+
+        .schedule-day {
+            background: var(--text-light);
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .schedule-day:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .day-title {
+            color: var(--primary);
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        .day-info {
+            background: var(--background-alt);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin-bottom: 2rem;
+        }
+
+        .day-info p {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .day-info i {
+            color: var(--primary);
+            font-size: 1.2em;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 3px;
+            background: var(--accent);
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+            padding-left: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0.5rem;
+            width: 1rem;
+            height: 1rem;
+            background: var(--primary);
+            border: 3px solid var(--accent);
+            border-radius: 50%;
+            transition: var(--transition);
+        }
+
+        .time {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: var(--primary-light);
+            color: var(--text-light);
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .content {
+            background: var(--background-alt);
+            padding: 1rem 1.5rem;
+            border-radius: var(--border-radius);
+            color: var(--text-dark);
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .content h4 {
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content ul li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .content ul li:before {
+            content: '\2022';
+            color: var(--primary);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+        }
+
+        .divider {
+            height: 3px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            margin: 4rem 0;
+            border-radius: 3px;
+            opacity: 0.3;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .schedule-day {
+                padding: 1.5rem;
+            }
+            
+            .day-title {
+                font-size: 1.5rem;
+            }
+            
+            .timeline {
+                padding-left: 1.5rem;
+            }
+            
+            .timeline-item {
+                padding-left: 1.5rem;
+            }
+            
+            .content {
+                padding: 1rem;
+            }
+            
+            .content h4 {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-menu">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo Lễ Hội" width="48" height="48">
+                <span>Lễ Hội VH</span>
+            </a>
+            <div class="nav-links">
+                <div class="nav-links">
+                    <a href="index.html#gioithieu" class="nav-link"><i class="fas fa-info-circle"></i> Giới Thiệu</a>
+                    <a href="lichtrinh.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Lịch Sự Kiện</a>
+                    <a href="dangky.html    " class="nav-link"><i class="fas fa-ticket-alt"></i> Đăng Ký</a>
+                    <a href="lienhe.html" class="nav-link"><i class="fas fa-phone"></i> Liên Hệ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 100px;">
+        <h1 style="font-size: 3.5rem; text-align: center; margin-bottom: 2.5rem; color: var(--text-dark); text-shadow: 2px 2px 4px rgba(0,0,0,0.1); font-family: 'Playfair Display', serif;">
+            Lịch Trình Chi Tiết Sự Kiện
+        </h1>
+
+        <div style="text-align: center; margin-bottom: 4rem; background: var(--background-alt); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+            <div style="display: inline-flex; align-items: center; margin-bottom: 1.5rem;">
+                <i class="fas fa-calendar-alt fa-2x" style="color: var(--primary); margin-right: 1rem;"></i>
+                <div>
+                    <p style="font-size: 1.6rem; font-weight: 600; margin-bottom: 0.5rem;">15-17 Tháng 12, 2025</p>
+                    <p style="font-size: 1.2rem; color: var(--text-medium);">3 ngày trải nghiệm văn hóa độc đáo</p>
+                </div>
+            </div>
+
+            <div style="display: inline-flex; align-items: center; margin-bottom: 1.5rem;">
+                <i class="fas fa-map-marker-alt fa-2x" style="color: var(--primary); margin-right: 1rem;"></i>
+                <div>
+                    <p style="font-size: 1.6rem; font-weight: 600; margin-bottom: 0.5rem;">Trung tâm Văn hóa tỉnh Đắk Lắk</p>
+                    <p style="font-size: 1.2rem; color: var(--text-medium);">47 Nguyễn Tất Thành, Buôn Ma Thuột</p>
+                </div>
+            </div>
+
+            <div style="display: inline-flex; align-items: center;">
+                <i class="fas fa-users fa-2x" style="color: var(--primary); margin-right: 1rem;"></i>
+                <div>
+                    <p style="font-size: 1.6rem; font-weight: 600; margin-bottom: 0.5rem;">Dự kiến 2000+ người tham dự</p>
+                    <p style="font-size: 1.2rem; color: var(--text-medium);">Từ khắp mọi miền đất nước</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 4rem; padding: 2rem; background: #ffffff; border-radius: var(--border-radius); color: var(--text-dark);">
+            <p style="font-size: 1.4rem; font-weight: 500; line-height: 1.6; max-width: 900px; margin: 0 auto;">
+                Hãy tham gia cùng chúng tôi trong hành trình khám phá và trải nghiệm tinh hoa văn hóa nghệ thuật. 
+                Nơi giao thoa độc đáo giữa nét đẹp truyền thống Trung Hoa và bản sắc đại ngàn Tây Nguyên, 
+                hứa hẹn những khoảnh khắc đáng nhớ và ý nghĩa.
+            </p>
+        </div>
+        
+        <section id="lichtrinh" class="schedule-section">
+            <div class="schedule-overview" style="margin-bottom: 4rem; background: var(--background-alt); padding: 2rem; border-radius: var(--border-radius); box-shadow: var(--shadow);" data-aos="fade-up">
+                <h2 style="text-align: center; color: var(--primary); margin-bottom: 2rem; font-size: 1.8rem;">Tổng Quan Lịch Trình</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <div class="overview-day" style="background: var(--text-light); padding: 1.5rem; border-radius: 12px; box-shadow: var(--shadow);">
+                        <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem;">
+                            <i class="fas fa-calendar-day" style="margin-right: 8px;"></i>Ngày 1
+                        </h3>
+                        <p style="color: var(--text-medium); margin-bottom: 0.5rem;">
+                            <i class="fas fa-star" style="color: var(--accent); margin-right: 8px;"></i>
+                            Khai mạc hoành tráng
+                        </p>
+                        <p style="color: var(--text-medium); margin-bottom: 0.5rem;">
+                            <i class="fas fa-star" style="color: var(--accent); margin-right: 8px;"></i>
+                            Triển lãm văn hóa
+                        </p>
+                        <p style="color: var(--text-medium);">
+                            <i class="fas fa-star" style="color: var(--accent); margin-right: 8px;"></i>
+                            Giao lưu nghệ thuật
+                        </p>
+                    </div>
+    
+                    <div class="overview-day" style="background: var(--text-light); padding: 1.5rem; border-radius: 12px; box-shadow: var(--shadow);">
+                        <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem;">
+                            <i class="fas fa-calendar-day" style="margin-right: 8px;"></i>Ngày 2
+                        </h3>
+                        <p style="color: var(--text-medium); margin-bottom: 0.5rem;">
+                            <i class="fas fa-star" style="color: var(--accent); margin-right: 8px;"></i>
+                            Workshop nghệ thuật
+                        </p>
+                        <p style="color: var(--text-medium); margin-bottom: 0.5rem;">
+                            <i class="fas fa-star" style="color: var(--accent); margin-right: 8px;"></i>
+                            Biểu diễn đặc sắc
+                        </p>
+                        <p style="color: var(--text-medium);">
+                            <i class="fas fa-star" style="color: var(--accent); margin-right: 8px;"></i>
+                            Giao lưu văn hóa
+                        </p>
+                    </div>
+    
+                    <div class="overview-day" style="background: var(--text-light); padding: 1.5rem; border-radius: 12px; box-shadow: var(--shadow);">
+                        <h3 style="color: var(--primary); font-size: 1.4rem; margin-bottom: 1rem;">
+                            <i class="fas fa-calendar-day" style="margin-right: 8px;"></i>Ngày 3
+                        </h3>
+                        <p style="color: var(--text-medium); margin-bottom: 0.5rem;">
+                            <i class="fas fa-star" style="color: var(--accent); margin-right: 8px;"></i>
+                            Ngày hội ẩm thực
+                        </p>
+                        <p style="color: var(--text-medium); margin-bottom: 0.5rem;">
+                            <i class="fas fa-star" style="color: var(--accent); margin-right: 8px;"></i>
+                            Tổng kết lễ hội
+                        </p>
+                        <p style="color: var(--text-medium);">
+                            <i class="fas fa-star" style="color: var(--accent); margin-right: 8px;"></i>
+                            Tiệc chia tay
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Ngày 1 -->
+            <div class="schedule-day" data-aos="fade-up">
+                <h3 class="day-title">NGÀY 1: KHAI MẠC & GIAO LƯU VĂN HÓA</h3>
+                <div class="day-info">
+                    <p><i class="far fa-clock"></i> Thời gian: 8:00 – 21:00</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Địa điểm: Trung tâm Văn hóa tỉnh</p>
+                    <p><i class="fas fa-info-circle"></i> Mô tả: Ngày đầu tiên tập trung vào các hoạt động khai mạc trang trọng và giao lưu văn hóa đặc sắc giữa hai nền văn hóa. Quý khách sẽ được trải nghiệm không khí lễ hội sôi động với nhiều tiết mục biểu diễn độc đáo.</p>
+                    <p><i class="fas fa-exclamation-circle"></i> Lưu ý: Vui lòng đến đúng giờ để không bỏ lỡ các tiết mục quan trọng. Khuyến khích mặc trang phục truyền thống của dân tộc mình.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">8:00 – 9:00</span>
+                        <div class="content">
+                            <h4>Đón Tiếp & Check-in</h4>
+                            <ul>
+                                <li>Đón tiếp đại biểu và khách mời tại sảnh chính</li>
+                                <li>Phát tài liệu hướng dẫn chi tiết và quà tặng đặc biệt</li>
+                                <li>Check-in tại các điểm chụp ảnh được trang trí công phu</li>
+                                <li>Hướng dẫn tham quan khu vực tổ chức sự kiện</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">9:00 – 10:30</span>
+                        <div class="content">
+                            <h4>Lễ Khai Mạc</h4>
+                            <ul>
+                                <li>Văn nghệ chào mừng với sự kết hợp độc đáo giữa nghệ thuật Trung Quốc và Tây Nguyên</li>
+                                <li>Phát biểu khai mạc từ lãnh đạo hai nước</li>
+                                <li>Giới thiệu chi tiết chương trình 3 ngày lễ hội</li>
+                                <li>Màn trình diễn đặc biệt kết hợp múa rồng Trung Hoa và cồng chiêng Tây Nguyên</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">10:30 – 12:00</span>
+                        <div class="content">
+                            <h4>Triển Lãm Văn Hóa</h4>
+                            <ul>
+                                <li>Trưng bày 200+ hiện vật văn hóa quý giá từ hai nền văn hóa</li>
+                                <li>Giới thiệu nghệ thuật truyền thống với thuyết minh song ngữ</li>
+                                <li>Trình diễn thư pháp trực tiếp bởi nghệ nhân nổi tiếng</li>
+                                <li>Khu vực trải nghiệm trang phục truyền thống</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">14:00 – 15:30</span>
+                        <div class="content">
+                            <h4>Giao Lưu Văn Nghệ</h4>
+                            <ul>
+                                <li>Biểu diễn cồng chiêng với 50 nghệ nhân Tây Nguyên</li>
+                                <li>Múa truyền thống Trung Quốc từ đoàn nghệ thuật Vân Nam</li>
+                                <li>Giao lưu âm nhạc dân tộc với các nhạc cụ đặc trưng</li>
+                                <li>Tiết mục song tấu đàn tranh và đàn T'rưng</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">15:30 – 17:00</span>
+                        <div class="content">
+                            <h4>Workshop Nghệ Thuật</h4>
+                            <ul>
+                                <li>Học vẽ tranh dân gian dưới sự hướng dẫn của nghệ nhân</li>
+                                <li>Làm đồ thủ công mỹ nghệ truyền thống (đăng ký trước)</li>
+                                <li>Trải nghiệm nghệ thuật cắt giấy Trung Quốc</li>
+                                <li>Thực hành đan lát và dệt thổ cẩm Tây Nguyên</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">19:00 – 21:00</span>
+                        <div class="content">
+                            <h4>Đêm Giao Lưu</h4>
+                            <ul>
+                                <li>Tiệc giao lưu với các món ăn đặc trưng hai miền</li>
+                                <li>Biểu diễn nghệ thuật đương đại kết hợp truyền thống</li>
+                                <li>Giao lưu văn nghệ tự do giữa các đoàn</li>
+                                <li>Kết nối văn hóa qua các trò chơi dân gian</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider" data-aos="fade-up"></div>
+
+            <!-- Ngày 2 -->
+            <div class="schedule-day" data-aos="fade-up">
+                <h3 class="day-title">NGÀY 2: TRẢI NGHIỆM & KHÁM PHÁ</h3>
+                <div class="day-info">
+                    <p><i class="far fa-clock"></i> Thời gian: 8:30 – 21:00</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Địa điểm: Các điểm tham quan trong thành phố</p>
+                    <p><i class="fas fa-info-circle"></i> Mô tả: Ngày thứ hai tập trung vào các hoạt động trải nghiệm thực tế, cho phép du khách tương tác trực tiếp với văn hóa của cả hai dân tộc. Đây là cơ hội tuyệt vời để học hỏi và thực hành các kỹ năng văn hóa truyền thống.</p>
+                    <p><i class="fas fa-exclamation-circle"></i> Lưu ý: Mang theo giày dép thoải mái để tham gia các hoạt động. Chuẩn bị máy ảnh để ghi lại những khoảnh khắc đáng nhớ.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">8:30 – 10:00</span>
+                        <div class="content">
+                            <h4>Tham Quan Di Tích</h4>
+                            <ul>
+                                <li>Thăm Bảo tàng tỉnh với hướng dẫn viên chuyên nghiệp</li>
+                                <li>Tìm hiểu lịch sử địa phương qua các hiện vật quý</li>
+                                <li>Chụp ảnh lưu niệm tại các điểm check-in đặc biệt</li>
+                                <li>Xem phim tư liệu về lịch sử văn hóa địa phương</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">10:00 – 11:30</span>
+                        <div class="content">
+                            <h4>Trải Nghiệm Văn Hóa</h4>
+                            <ul>
+                                <li>Học múa dân gian với các nghệ sĩ chuyên nghiệp</li>
+                                <li>Thực hành võ thuật truyền thống hai nước</li>
+                                <li>Trải nghiệm nhạc cụ dân tộc đặc trưng</li>
+                                <li>Tham gia lớp học nấu ăn truyền thống</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">14:00 – 15:30</span>
+                        <div class="content">
+                            <h4>Hội Thi Văn Nghệ</h4>
+                            <ul>
+                                <li>Thi hát dân ca với giải thưởng hấp dẫn</li>
+                                <li>Biểu diễn nhạc cụ truyền thống</li>
+                                <li>Trình diễn thời trang dân tộc sáng tạo</li>
+                                <li>Cuộc thi tài năng văn hóa tổng hợp</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">15:30 – 17:00</span>
+                        <div class="content">
+                            <h4>Trò Chơi Dân Gian</h4>
+                            <ul>
+                                <li>Đánh đu theo phong cách truyền thống</li>
+                                <li>Kéo co giữa các đội đa văn hóa</li>
+                                <li>Nhảy sạp với hướng dẫn chuyên nghiệp</li>
+                                <li>Các trò chơi dân gian đặc sắc khác</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">17:00 – 18:30</span>
+                        <div class="content">
+                            <h4>Giao Lưu Văn Hóa</h4>
+                            <ul>
+                                <li>Trao đổi kinh nghiệm giữa các nghệ nhân</li>
+                                <li>Chia sẻ câu chuyện văn hóa đặc sắc</li>
+                                <li>Kết nối văn hóa qua hoạt động nhóm</li>
+                                <li>Workshop về bảo tồn di sản văn hóa</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">19:00 – 20:30</span>
+                        <div class="content">
+                            <h4>Đêm Nghệ Thuật</h4>
+                            <ul>
+                                <li>Biểu diễn múa rối nước độc đáo</li>
+                                <li>Xiếc truyền thống Trung Hoa</li>
+                                <li>Nhạc kịch dân gian Tây Nguyên</li>
+                                <li>Trình diễn ánh sáng nghệ thuật</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">20:30 – 21:00</span>
+                        <div class="content">
+                            <h4>Kết Thúc Ngày 2</h4>
+                            <ul>
+                                <li>Bốc thăm trúng thưởng với phần quà giá trị</li>
+                                <li>Thông báo chi tiết lịch trình ngày 3</li>
+                                <li>Tặng quà lưu niệm đặc biệt cho người tham dự</li>
+                                <li>Tổng kết các hoạt động trong ngày</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider" data-aos="fade-up"></div>
+
+            <!-- Ngày 3 -->
+            <div class="schedule-day" data-aos="fade-up">
+                <h3 class="day-title">NGÀY 3: NGÀY HỘI ẨM THỰC – TỔNG KẾT & BẾ MẠC</h3>
+                <div class="day-info">
+                    <p><i class="far fa-clock"></i> Thời gian: 8:00 – 20:00</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Địa điểm: Khuôn viên ngoài trời Trung tâm Văn hóa</p>
+                    <p><i class="fas fa-info-circle"></i> Mô tả: Ngày cuối cùng là một bữa tiệc văn hóa ẩm thực tuyệt vời, kết hợp với các hoạt động tổng kết và chia tay đầy cảm xúc. Quý khách sẽ được thưởng thức những món ăn đặc sắc và tham gia vào không khí lễ hội sôi động.</p>
+                    <p><i class="fas fa-exclamation-circle"></i> Lưu ý: Mang theo phiếu thưởng thức ẩm thực được phát. Chuẩn bị tinh thần cho một ngày đầy năng lượng và cảm xúc.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">8:00 – 9:00</span>
+                        <div class="content">
+                            <h4>Check-in Ngày Cuối</h4>
+                            <ul>
+                                <li>Phát phiếu thưởng thức 20 món ăn đặc sắc</li>
+                                <li>Tặng tạp dề đặc biệt có chữ ký của đầu bếp</li>
+                                <li>Hướng dẫn chi tiết chương trình ngày cuối</li>
+                                <li>Phát bản đồ khu vực ẩm thực</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">9:00 – 11:30</span>
+                        <div class="content">
+                            <h4>Ngày Hội Ẩm Thực</h4>
+                            <ul>
+                                <li>100+ gian hàng ẩm thực đặc sắc từ hai nền văn hóa</li>
+                                <li>Trình diễn làm sủi cảo, bánh bao trực tiếp</li>
+                                <li>Workshop nấu cơm lam, pha rượu cần truyền thống</li>
+                                <li>Khu vực làm kẹo hồ lô với nghệ nhân Trung Quốc</li>
+                                <li>Vẽ mặt theo phong cách dân gian hai nước</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">11:30 – 13:00</span>
+                        <div class="content">
+                            <h4>Cuộc Thi Đầu Bếp Trẻ</h4>
+                            <ul>
+                                <li>20 đội thi từ các trường đầu bếp hàng đầu</li>
+                                <li>Thử thách nấu món fusion Trung - Tây Nguyên</li>
+                                <li>Giám khảo là đầu bếp nổi tiếng hai nước</li>
+                                <li>Giải thưởng hấp dẫn với tổng giá trị 100 triệu đồng</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">13:00 – 14:30</span>
+                        <div class="content">
+                            <h4>Trình Diễn Thời Trang</h4>
+                            <ul>
+                                <li>50 mẫu thiết kế độc đáo kết hợp hai nền văn hóa</li>
+                                <li>Trang phục truyền thống được tái hiện hiện đại</li>
+                                <li>Trình diễn của người mẫu không chuyên đến từ cộng đồng</li>
+                                <li>Trao giải cho những thiết kế xuất sắc nhất</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">14:30 – 16:00</span>
+                        <div class="content">
+                            <h4>Chương Trình Gửi Lời Yêu Thương</h4>
+                            <ul>
+                                <li>Viết thư pháp tặng người thân bằng hai ngôn ngữ</li>
+                                <li>Làm thiệp handmade với họa tiết truyền thống</li>
+                                <li>Ghi âm lời chúc bằng tiếng Việt và tiếng Trung</li>
+                                <li>Trang trí thiệp theo phong cách dân tộc độc đáo</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">16:00 – 17:30</span>
+                        <div class="content">
+                            <h4>Lễ Bế Mạc</h4>
+                            <ul>
+                                <li>Tổng kết ấn tượng 3 ngày lễ hội qua video highlight</li>
+                                <li>Trao kỷ niệm chương cho đại biểu và khách mời</li>
+                                <li>Công bố và trao giải các cuộc thi trong lễ hội</li>
+                                <li>Phát biểu cảm ơn và chia sẻ từ ban tổ chức</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <span class="time">17:30 – 20:00</span>
+                        <div class="content">
+                            <h4>Đêm Tiệc Chia Tay</h4>
+                            <ul>
+                                <li>Tiệc buffet quốc tế với hơn 100 món đặc sắc</li>
+                                <li>Biểu diễn acoustic kết hợp nhạc cụ hai nền văn hóa</li>
+                                <li>Nghi thức thả đèn ước nguyện truyền thống</li>
+                                <li>Chụp ảnh lưu niệm tập thể hoành tráng</li>
+                                <li>Trao quà kỷ niệm đặc biệt cho tất cả người tham dự</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100,
+            easing: 'ease-out-cubic',
+            delay: 50
+        });
+
+        const nav = document.querySelector('.nav-menu');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>

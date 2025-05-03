@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liên hệ với Ban tổ chức Lễ Hội Văn Hóa Nghệ Thuật Trung Quốc & Tây Nguyên 2025">
+    <title>Liên Hệ - Lễ Hội Văn Hóa Nghệ Thuật Trung Quốc & Tây Nguyên 2025</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <style>
+        :root {
+            --primary: #e60012;
+            --primary-dark: #cc0010;
+            --primary-light: #ff1a1a;
+            --secondary: #006838;
+            --secondary-dark: #004d29;
+            --secondary-light: #00994d;
+            --accent: #ffd700;
+            --accent-dark: #ccac00;
+            --accent-light: #ffe44d;
+            --text-dark: #1a1a1a;
+            --text-medium: #4a4a4a;
+            --text-light: #ffffff;
+            --background: #f8f9fa;
+            --background-alt: #f0f2f5;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            --border-radius: 16px;
+            --container-width: 1280px;
+            --section-spacing: 6rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            color: var(--text-dark);
+            background: var(--background);
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .nav-menu {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text-dark);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .contact-header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('images/contact-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--text-light);
+            padding: 8rem 0 4rem;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .contact-subtitle {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .contact-content {
+            padding: 4rem 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .contact-info {
+            background: var(--text-light);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .contact-info h3 {
+            color: var(--text-dark);
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info-item i {
+            color: var(--primary);
+            font-size: 1.5rem;
+        }
+
+        .contact-form {
+            background: var(--text-light);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+
+        .btn-submit {
+            background: var(--primary);
+            color: var(--text-light);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .btn-submit:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .map-container {
+            margin-top: 4rem;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-menu">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Logo" width="48" height="48">
+                Lễ Hội Văn Hóa 2025
+            </a>
+            <div class="nav-links">
+                <a href="index.html#gioithieu" class="nav-link">Giới Thiệu</a>
+                <a href="index.html#lichsu" class="nav-link">Lịch Sự Kiện</a>
+                <a href="dangky.html" class="nav-link">Đăng Ký</a>
+                <a href="lienhe.html" class="nav-link">Liên Hệ</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="contact-header">
+        <div class="container">
+            <h1 class="contact-title">Liên Hệ Với Chúng Tôi</h1>
+            <p class="contact-subtitle">Hãy liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi nào về Lễ hội Văn hóa Nghệ thuật Trung Quốc & Tây Nguyên 2025</p>
+        </div>
+    </header>
+
+    <main class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3 class="section-title">Thông Tin Liên Hệ</h3>
+                    <div class="contact-info-item hover-effect">
+                        <i class="fas fa-map-marker-alt pulse"></i>
+                        <div>
+                            <h4>Địa Chỉ</h4>
+                            <p>Trung tâm Văn hóa tỉnh Đắk Lắk<br>
+                            Số 02 Hùng Vương, Tp. Buôn Ma Thuột</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item hover-effect">
+                        <i class="fas fa-phone bounce"></i>
+                        <div>
+                            <h4>Điện Thoại</h4>
+                            <p>Hotline: 0262 3859 666<br>
+                            Fax: 0262 3859 667</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item hover-effect">
+                        <i class="fas fa-envelope swing"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>lehoivanhoa@daklak.gov.vn<br>
+                            bantochuc@lehoivanhoa.vn</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item hover-effect">
+                        <i class="fas fa-clock rotate"></i>
+                        <div>
+                            <h4>Giờ Làm Việc</h4>
+                            <p>Thứ 2 - Thứ 6: 8:00 - 17:00<br>
+                            Thứ 7: 8:00 - 12:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <h3 class="section-title">Gửi Tin Nhắn</h3>
+                    <form id="contactForm" class="animated-form">
+                        <div class="form-group">
+                            <label class="form-label">Họ và tên</label>
+                            <input type="text" class="form-control focus-effect" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control focus-effect" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Số điện thoại</label>
+                            <input type="tel" class="form-control focus-effect">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Chủ đề</label>
+                            <select class="form-control focus-effect" required>
+                                <option value="">Chọn chủ đề</option>
+                                <option value="general">Thông tin chung</option>
+                                <option value="program">Chương trình</option>
+                                <option value="registration">Đăng ký tham gia</option>
+                                <option value="sponsor">Tài trợ & Hợp tác</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Nội dung</label>
+                            <textarea class="form-control focus-effect" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit ripple">Gửi Tin Nhắn</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="map-container" data-aos="fade-up">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.3461535056747!2d108.03764631482037!3d12.684631991048037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171f7f3f0d795b7%3A0x2f0fe4d0c3c46d9a!2zVHJ1bmcgdMOibSBWxINuIGjDs2EgdOG7iW5oIMSQ4bqvayBM4bqvaw!5e0!3m2!1svi!2s!4v1645167855555!5m2!1svi!2s" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+
+       
+    </main>
+</div>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        const nav = document.querySelector('.nav-menu');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Cảm ơn bạn đã gửi tin nhắn. Chúng tôi sẽ phản hồi sớm nhất có thể!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
