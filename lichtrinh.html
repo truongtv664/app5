@@ -12,7 +12,7 @@
     <title>Lịch Trình Chi Tiết | Lễ Hội Văn Hóa Nghệ Thuật Trung Quốc & Tây Nguyên</title>
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/1s0x3171f7f3f0d795b7">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -101,6 +101,11 @@
             transition: var(--transition);
         }
 
+        .nav-menu.scrolled {
+            padding: 0.75rem 0;
+            background: rgba(255, 255, 255, 0.95);
+        }
+
         .nav-container {
             display: flex;
             justify-content: space-between;
@@ -109,7 +114,6 @@
             margin: 0 auto;
             padding: 0 2rem;
         }
-
         .logo {
             display: flex;
             align-items: center;
@@ -337,17 +341,15 @@
 <body>
     <nav class="nav-menu">
         <div class="nav-container">
-            <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="Logo Lễ Hội" width="48" height="48">
-                <span>Lễ Hội VH</span>
+            <a href="#" class="logo" aria-label="Trang chủ">
+                <img src="Img/logo.jpg" alt="Logo Lễ Hội" width="75" height="75">
+                <span>Lễ Hội Văn Hoá Nghệ Thuật</span>
             </a>
             <div class="nav-links">
-                <div class="nav-links">
-                    <a href="index.html#gioithieu" class="nav-link"><i class="fas fa-info-circle"></i> Giới Thiệu</a>
-                    <a href="lichtrinh.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Lịch Sự Kiện</a>
-                    <a href="dangky.html    " class="nav-link"><i class="fas fa-ticket-alt"></i> Đăng Ký</a>
-                    <a href="lienhe.html" class="nav-link"><i class="fas fa-phone"></i> Liên Hệ</a>
-                </div>
+                <a href="index.html#gioithieu" class="nav-link">Giới Thiệu</a>
+                <a href="lichtrinh.html" class="nav-link"><i class="fas fa-calendar-alt"></i> Lịch Sự Kiện</a>
+                <a href="dangky.html    " class="nav-link"><i class="fas fa-ticket-alt"></i> Đăng Ký</a>
+                <a href="lienhe.html" class="nav-link"><i class="fas fa-phone"></i> Liên Hệ</a>
             </div>
         </div>
     </nav>
